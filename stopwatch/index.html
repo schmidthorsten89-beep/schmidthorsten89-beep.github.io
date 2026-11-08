@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stopwatch</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+  :root {
+    --page: #e9e9e9;
+    --win-bg: #acacac;          /* Window Background #FFACACAC */
+    --panel-bg: #d5d5d2;        /* Button-Leiste #FFD5D5D2 */
+    --title-bg: #ffffff;
+    --title-fg: #000000;
+    --text: #000000;
+    --frame: #8c8c8c;
+    --btn-top: #f0f0f0;
+    --btn-bottom: #e5e5e5;
+    --btn-border: #707070;
+    --btn-hover-bg: #e5f1fb;
+    --btn-hover-border: #3c7fb1;
+    --btn-press-bg: #cce4f7;
+    --btn-press-border: #2c628b;
+    --btn-dis-bg: #f4f4f4;
+    --btn-dis-border: #adb2b5;
+    --btn-dis-fg: #838383;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --page: #1e1e1e; }
+  }
+  :root[data-theme="dark"] { --page: #1e1e1e; }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--page);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    color: var(--text);
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Fenster (300 x 320 wie im WPF-Original) */
+  .window {
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid var(--frame);
+    box-shadow: 0 8px 30px rgba(0,0,0,.25);
+    background: var(--win-bg);
+  }
+  .titlebar {
+    height: 31px;
+    background: var(--title-bg);
+    color: var(--title-fg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  .titlebar img { width: 16px; height: 16px; }
+
+  /* Grid: RowDefinitions 37 / 50 / 37 / 50 / 45 / 45 */
+  .grid {
+    display: grid;
+    grid-template-rows: 37px 50px 37px 50px 45px 45px;
+    padding-bottom: 6px;
+  }
+  .label, .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: pre;
+  }
+  .label { font-size: 20px; }
+  .timer { font-size: 30px; font-variant-numeric: tabular-nums; }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: var(--panel-bg);
+  }
+  .export-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* klassischer WPF-Button */
+  button {
+    width: 50px;
+    height: 25px;
+    padding: 0;
+    font: 12px "Segoe UI", system-ui, sans-serif;
+    color: #000;
+    background: linear-gradient(var(--btn-top), var(--btn-bottom));
+    border: 1px solid var(--btn-border);
+    border-radius: 0;
+    cursor: default;
+  }
+  button:hover:not(:disabled) { background: var(--btn-hover-bg); border-color: var(--btn-hover-border); }
+  button:active:not(:disabled) { background: var(--btn-press-bg); border-color: var(--btn-press-border); }
+  button:focus-visible { outline: 1px dotted #000; outline-offset: -4px; }
+  button:disabled {
+    background: var(--btn-dis-bg);
+    border-color: var(--btn-dis-border);
+    color: var(--btn-dis-fg);
+  }
+
+  .hint {
+    position: fixed;
+    bottom: 8px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<div class="window" role="application" aria-label="Stopwatch">
+  <div class="titlebar">
+    <img alt="" id="titleIcon">
+    <span>Stopwatch</span>
+  </div>
+
+  <div class="grid">
+    <div class="label">Minutes : 1/100</div>
+    <div class="timer" id="timerText">0:00</div>
+    <div class="label">Split &amp; Minutes : 1/100</div>
+    <div class="timer" id="timerText2"></div>
+    <div class="buttons">
+      <button id="startButton">Start</button>
+      <button id="stopButton" disabled>Stop</button>
+      <button id="resetButton" disabled>Reset</button>
+    </div>
+    <div class="export-row">
+      <button id="exportButton" disabled>Export</button>
+    </div>
+  </div>
+</div>
+
+<div class="hint">Tasten: Leertaste = Start/Split · S = Stop · R = Reset</div>
+
+<script>
+(() => {
+  // ---- System.Diagnostics.Stopwatch nachgebildet ----
+  const stopwatch = {
+    elapsedMs: 0,
+    startedAt: null,
+    get isRunning() { return this.startedAt !== null; },
+    start() { if (!this.isRunning) this.startedAt = performance.now(); },
+    stop()  { if (this.isRunning) { this.elapsedMs += performance.now() - this.startedAt; this.startedAt = null; } },
+    reset() { this.elapsedMs = 0; this.startedAt = null; },
+    get elapsed() { return this.elapsedMs + (this.isRunning ? performance.now() - this.startedAt : 0); }
+  };
+
+  let round = 0;
+  const output = new Map();   // IDictionary<int, string>
+  let seconds = 0;            // eigentlich 1/100 Minuten (Industrieminuten)
+
+  const $ = id => document.getElementById(id);
+  const timerText = $('timerText'), timerText2 = $('timerText2');
+  const startButton = $('startButton'), stopButton = $('stopButton'),
+        resetButton = $('resetButton'), exportButton = $('exportButton');
+
+  $('titleIcon').src = document.querySelector('link[rel=icon]').href;
+
+  // .NET Math.Round(x, 0) rundet "banker's rounding" (Mitte -> gerade Zahl)
+  function roundHalfEven(x) {
+    const f = Math.floor(x), d = x - f;
+    if (d > 0.5) return f + 1;
+    if (d < 0.5) return f;
+    return f % 2 === 0 ? f : f + 1;
+  }
+
+  // entspricht seconds.ToString("0:00.")  ->  z.B. 523 => "5:23", 7 => "0:07"
+  function fmt(n) {
+    return Math.floor(n / 100) + ':' + String(n % 100).padStart(2, '0');
+  }
+
+  function startButton_Click() {
+    stopwatch.start();
+    startButton.textContent = 'Split';
+    stopButton.disabled = false;
+    resetButton.disabled = true;
+    exportButton.disabled = true;
+    if (round > 0) output.set(round, String(seconds));
+    round++;
+  }
+
+  function stopButton_Click() {
+    stopwatch.stop();
+    startButton.disabled = false;
+    stopButton.disabled = true;
+    resetButton.disabled = false;
+    exportButton.disabled = false;
+    startButton.textContent = 'Start';
+  }
+
+  function resetButton_Click() {
+    stopwatch.reset();
+    timerText.textContent = '0:00';
+    startButton.disabled = false;
+    stopButton.disabled = true;
+    resetButton.disabled = true;
+    exportButton.disabled = true;
+    round = 0;
+    output.clear();
+    timerText2.textContent = '';
+  }
+
+  function timer_Tick() {
+    if (!stopwatch.isRunning) return;
+    const totalMinutes = stopwatch.elapsed / 60000;
+    seconds = roundHalfEven(totalMinutes * 100);
+    timerText.textContent = fmt(seconds);
+
+    if (round > 1) {
+      const s = output.get(round - 1);
+      if (s.length >= 3) {
+        timerText2.textContent = (round - 1) + '   ' + s.substring(0, s.length - 2) + ':' + s.substring(s.length - 2);
+      } else {
+        timerText2.textContent = (round - 1) + '   0:' + s.padStart(2, '0');
+      }
+    }
+  }
+
+  // CSV: Trennzeichen ";" bei deutscher Oberfläche, sonst ","
+  function buildCSV(dict) {
+    const sep = (navigator.language || '').slice(0, 2).toLowerCase() === 'de' ? ';' : ',';
+    return Array.from(dict, ([k, v]) => `${k}${sep}${v}`).join('\r\n');
+  }
+
+  async function exportButton_Click() {
+    const csv = buildCSV(output);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+
+    if (window.showSaveFilePicker) {
+      try {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: 'Stopwatch.csv',
+          types: [{ description: 'CSV-Dateien (*.csv)', accept: { 'text/csv': ['.csv'] } }]
+        });
+        const w = await handle.createWritable();
+        await w.write(blob);
+        await w.close();
+      } catch (e) {
+        if (e && e.name === 'AbortError') return;   // Dialog abgebrochen
+        throw e;
+      }
+    } else {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Stopwatch.csv';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    }
+    exportButton.disabled = true;
+  }
+
+  startButton.addEventListener('click', startButton_Click);
+  stopButton.addEventListener('click', stopButton_Click);
+  resetButton.addEventListener('click', resetButton_Click);
+  exportButton.addEventListener('click', exportButton_Click);
+
+  // Window_KeyDown: Space -> Start/Split, S -> Stop, R -> Reset
+  // (wie im Original per RaiseEvent, also unabhängig vom Enabled-Zustand)
+  window.addEventListener('keydown', e => {
+    if (e.repeat || e.ctrlKey || e.altKey || e.metaKey) return;
+    if (e.code === 'Space')      { e.preventDefault(); startButton_Click(); }
+    else if (e.code === 'KeyS')  { e.preventDefault(); stopButton_Click(); }
+    else if (e.code === 'KeyR')  { e.preventDefault(); resetButton_Click(); }
+  });
+  // Leertaste soll keinen fokussierten Button zusätzlich auslösen
+  window.addEventListener('keyup', e => { if (e.code === 'Space') e.preventDefault(); });
+
+  // DispatcherTimer mit 100 ms Intervall
+  setInterval(timer_Tick, 100);
+})();
+</script>
+</body>
+</html>
